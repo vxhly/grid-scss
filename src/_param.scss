@@ -2,7 +2,7 @@
 // @Date:   2018-01-20 01:08:48 pm
 // @Email:  pengchengou@gmail.com
 // @Last modified by:   vxhly
-// @Last modified time: 2018-01-20 02:07:33 pm
+// @Last modified time: 2018-01-20 07:09:48 pm
 // @License: MIT
 $baseFontSize : 14px; //全局字体大小
 $baseColor    : #666; //全局字体颜色
@@ -12,3 +12,4 @@ $gridColumnGap: 1.5rem; // X 轴上格子区域之间的距离
 $header       : 60px; // header 区域高度
 $aside        : 150px; // aside 区域高度
 $footer       : 60px; // footer 区域高度
+$min          : 100px; // 自适应时，最小网格宽度

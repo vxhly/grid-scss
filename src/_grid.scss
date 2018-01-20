@@ -2,13 +2,17 @@
 // @Date:   2018-01-20 01:14:44 pm
 // @Email:  pengchengou@gmail.com
 // @Last modified by:   vxhly
-// @Last modified time: 2018-01-20 01:52:28 pm
+// @Last modified time: 2018-01-20 07:11:26 pm
 // @License: MIT
 
 [grid] {
   display: grid;
   width  : 100%;
   height : 100%;
+}
+
+[grid] img {
+  object-fit: cover;
 }
 
 [grid^="row-"],
@@ -23,4 +27,16 @@
   [grid~="col-#{$i}"] {
     grid-template-columns: repeat($i, 1fr);
   }
+}
+
+[grid="col-auto"] {
+  grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+}
+
+[grid~="flow:col"] {
+  grid-auto-flow: column;
+}
+
+[grid~="flow:row"] {
+  grid-auto-flow: row;
 }

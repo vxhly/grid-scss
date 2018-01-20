@@ -1,7 +1,7 @@
 /*!
  * grid-scss - Grid 网格布局神器，Grid Layout 是一种基于二维网格的布局系统，旨在完全改变我们设计基于网格的用户界面的方式，弥补网页开发在二维布局能力上的缺陷,可以通过 bower 和 npm 下载
  * 
- * @version v1.0.2
+ * @version v1.0.3
  * 
  * @author vxhly <pengchengou@gmail.com>
  * 
@@ -47,6 +47,11 @@ body {
   display: grid;
   width: 100%;
   height: 100%;
+}
+
+[grid] img {
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 [grid^='row-'],
@@ -148,6 +153,18 @@ body {
 
 [grid~='col-12'] {
   grid-template-columns: repeat(12, 1fr);
+}
+
+[grid='col-auto'] {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+[grid~='flow:col'] {
+  grid-auto-flow: column;
+}
+
+[grid~='flow:row'] {
+  grid-auto-flow: row;
 }
 
 [grid-name] {
@@ -308,4 +325,268 @@ body {
   grid-template-areas: 'aside main' 'aside main' 'footer footer';
   grid-template-rows: auto auto 60px;
   grid-template-columns: 150px auto;
+}
+
+[grid] > [grid-box-col-param] {
+  -webkit-align-self: param;
+  -ms-flex-item-align: param;
+  align-self: param;
+}
+
+[grid] > [grid-box-row-param] {
+  justify-self: param;
+}
+
+[grid~='col-parma'] {
+  -webkit-box-align: param;
+  -webkit-align-items: param;
+  -ms-flex-align: param;
+  align-items: param;
+}
+
+[grid~='row-parma'] {
+  justify-items: param;
+}
+
+[grid] > [grid-box-col-param] {
+  -webkit-align-self: param;
+  -ms-flex-item-align: param;
+  align-self: param;
+}
+
+[grid] > [grid-box-row-param] {
+  justify-self: param;
+}
+
+[grid~='col-parma'] {
+  -webkit-box-align: param;
+  -webkit-align-items: param;
+  -ms-flex-align: param;
+  align-items: param;
+}
+
+[grid~='row-parma'] {
+  justify-items: param;
+}
+
+[grid] > [grid-box-col-param] {
+  -webkit-align-self: param;
+  -ms-flex-item-align: param;
+  align-self: param;
+}
+
+[grid] > [grid-box-row-param] {
+  justify-self: param;
+}
+
+[grid~='col-parma'] {
+  -webkit-box-align: param;
+  -webkit-align-items: param;
+  -ms-flex-align: param;
+  align-items: param;
+}
+
+[grid~='row-parma'] {
+  justify-items: param;
+}
+
+[grid] > [grid-box-col-param] {
+  -webkit-align-self: param;
+  -ms-flex-item-align: param;
+  align-self: param;
+}
+
+[grid] > [grid-box-row-param] {
+  justify-self: param;
+}
+
+[grid~='col-parma'] {
+  -webkit-box-align: param;
+  -webkit-align-items: param;
+  -ms-flex-align: param;
+  align-items: param;
+}
+
+[grid~='row-parma'] {
+  justify-items: param;
+}
+
+[grid] > [grid-box-col-param] {
+  -webkit-align-self: param;
+  -ms-flex-item-align: param;
+  align-self: param;
+}
+
+[grid] > [grid-box-row-param] {
+  justify-self: param;
+}
+
+[grid~='col-parma'] {
+  -webkit-box-align: param;
+  -webkit-align-items: param;
+  -ms-flex-align: param;
+  align-items: param;
+}
+
+[grid~='row-parma'] {
+  justify-items: param;
+}
+
+[grid] > [grid-box-col-param] {
+  -webkit-align-self: param;
+  -ms-flex-item-align: param;
+  align-self: param;
+}
+
+[grid] > [grid-box-row-param] {
+  justify-self: param;
+}
+
+[grid~='col-parma'] {
+  -webkit-box-align: param;
+  -webkit-align-items: param;
+  -ms-flex-align: param;
+  align-items: param;
+}
+
+[grid~='row-parma'] {
+  justify-items: param;
+}
+
+[grid] > [grid-box-col-param] {
+  -webkit-align-self: param;
+  -ms-flex-item-align: param;
+  align-self: param;
+}
+
+[grid] > [grid-box-row-param] {
+  justify-self: param;
+}
+
+[grid~='col-parma'] {
+  -webkit-box-align: param;
+  -webkit-align-items: param;
+  -ms-flex-align: param;
+  align-items: param;
+}
+
+[grid~='row-parma'] {
+  justify-items: param;
+}
+
+[grid~='col:param'] {
+  -webkit-box-pack: param;
+  -webkit-justify-content: param;
+  -ms-flex-pack: param;
+  justify-content: param;
+}
+
+[grid~='row:param'] {
+  -webkit-align-content: param;
+  -ms-flex-line-pack: param;
+  align-content: param;
+}
+
+[grid~='col:param'] {
+  -webkit-box-pack: param;
+  -webkit-justify-content: param;
+  -ms-flex-pack: param;
+  justify-content: param;
+}
+
+[grid~='row:param'] {
+  -webkit-align-content: param;
+  -ms-flex-line-pack: param;
+  align-content: param;
+}
+
+[grid~='col:param'] {
+  -webkit-box-pack: param;
+  -webkit-justify-content: param;
+  -ms-flex-pack: param;
+  justify-content: param;
+}
+
+[grid~='row:param'] {
+  -webkit-align-content: param;
+  -ms-flex-line-pack: param;
+  align-content: param;
+}
+
+[grid~='col:param'] {
+  -webkit-box-pack: param;
+  -webkit-justify-content: param;
+  -ms-flex-pack: param;
+  justify-content: param;
+}
+
+[grid~='row:param'] {
+  -webkit-align-content: param;
+  -ms-flex-line-pack: param;
+  align-content: param;
+}
+
+[grid~='col:param'] {
+  -webkit-box-pack: param;
+  -webkit-justify-content: param;
+  -ms-flex-pack: param;
+  justify-content: param;
+}
+
+[grid~='row:param'] {
+  -webkit-align-content: param;
+  -ms-flex-line-pack: param;
+  align-content: param;
+}
+
+[grid~='col:param'] {
+  -webkit-box-pack: param;
+  -webkit-justify-content: param;
+  -ms-flex-pack: param;
+  justify-content: param;
+}
+
+[grid~='row:param'] {
+  -webkit-align-content: param;
+  -ms-flex-line-pack: param;
+  align-content: param;
+}
+
+[grid~='col:param'] {
+  -webkit-box-pack: param;
+  -webkit-justify-content: param;
+  -ms-flex-pack: param;
+  justify-content: param;
+}
+
+[grid~='row:param'] {
+  -webkit-align-content: param;
+  -ms-flex-line-pack: param;
+  align-content: param;
+}
+
+[grid~='col:param'] {
+  -webkit-box-pack: param;
+  -webkit-justify-content: param;
+  -ms-flex-pack: param;
+  justify-content: param;
+}
+
+[grid~='row:param'] {
+  -webkit-align-content: param;
+  -ms-flex-line-pack: param;
+  align-content: param;
+}
+
+[grid~='col:param'] {
+  -webkit-box-pack: param;
+  -webkit-justify-content: param;
+  -ms-flex-pack: param;
+  justify-content: param;
+}
+
+[grid~='row:param'] {
+  -webkit-align-content: param;
+  -ms-flex-line-pack: param;
+  align-content: param;
 }

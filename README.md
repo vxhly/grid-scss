@@ -88,12 +88,12 @@ CSS Grid Layout擅长将页面划分为主要区域，或根据HTML基元构建�
 ## menuTree
 
 ```
-  |- src
-    |- _base.scss       => 清除浏览器默认样式，更完整的清除浏览器样式可引入  [normalize.css](https://github.com/necolas/normalize.css)
-    |- _grid-name.scss  => 定义区域布局
-    |- _grid.scss       => 开启 Grid Layout 布局，等分区域布局（通过 grid="col-* row-* 设置 * 取值为 number，范围 1~12"）
-    |- _param.scss      => 全局变量（如需自定义，修改本文件即可）
-    |- grid-scss.scss   => 主文件
+|- src
+  |- _base.scss       => 清除浏览器默认样式，更完整的清除浏览器样式可引入  [normalize.css](https://github.com/necolas/normalize.css)
+  |- _grid-name.scss  => 定义区域布局
+  |- _grid.scss       => 开启 Grid Layout 布局，等分区域布局
+  |- _param.scss      => 全局变量（如需自定义，修改本文件即可）
+  |- grid-scss.scss   => 主文件
 ```
 
 ## use
@@ -101,16 +101,30 @@ CSS Grid Layout擅长将页面划分为主要区域，或根据HTML基元构建�
 ```html
 <link rel="stylesheet" href="./dist/css/grid-scss.css">
 
-<!-- 经典布局（header aside main footer）,从左至右，从上至下 -->
-<div grid grid-name="header (aside main) footer" class="info">
+<!-- 经典布局（header aside main footer）,从上至下 ,从左至右 -->
+<!-- 子区域采用 grid-header grid-aside grid-main grid-footer 来命名区域 -->
+<!-- 采用命名区域的时候，元素顺序可以不遵循从上至下 ,从左至右，反之则需要  -->
+<div grid grid-name="[header main footer]" class="info">
   <div grid-header>header</div>
   <div grid-main>Main</div>
-  <div grid-aside>Aside</div>
+  <!-- <div grid-aside>Aside</div> -->
   <div grid-footer>Footer</div>
 </div>
 ```
 
 - `grid` => 开启 Grid Layout 布局
+
+  - grid="`col-* row-*`" 设置 * 取值为 number，范围 1~12，`col-` 设置有几列，`row-` 设置有几行
+  - grid="`col-auto`" 可创建 n 个网格，宽度最小值 100px
+  - grid="`flow:col`" 流布局（从左至右）
+  - grid="`flow:row`" 流布局（从上至下）
+  - grid="`col--* row--*`" 设置 `*` 取值为 string，取值 (auto, normal, start, end, center, stretch, baseline), `col--*` 设置沿着列轴线(column axis) 对齐方式, `row--*` 沿着行轴线(row axis) 线上对齐方式
+
+    - grid-box--col-`*` 设置 `*` 取值为 string，取值 (auto, normal, start, end, center, stretch, baseline), 沿着列轴线(column axis)对齐网格项内的内容此值适用于单个网格项内的内容
+    - grid-box--row-`*` 设置 `*` 取值为 string，取值 (auto, normal, start, end, center, stretch, baseline),沿着 行轴线(row axis) 对齐网格项内的内容此值适用于单个网格项内的内容
+
+  - grid="`col::* row::*`" 设置 `*` 取值为 string，取值 (auto, normal, start, end, center, stretch, baseline), `col::*` 设置列轴线(column axis) 对齐网格, `row:*` 设置行轴线(row axis) 对齐网格
+
 - `grid-name` => 指定布局方式（header、footer 默认高 60px，aside 默认高 150px, main 自动适配，区域与区域之间的间距默认为 1.5rem，值的写法应该遵循从上至下，从左至右原则，从上至下使用 `[]` 将区域名字括起来，区域名字使用空格相隔，从左至右使用 `()` 将区域名字括起来，区域名字使用空格相隔），以下为 `grid-name` 的可选值
 
   - `[header main]`

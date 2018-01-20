@@ -2,9 +2,10 @@
 // @Date:   2018-01-19 04:30:24 pm
 // @Email:  pengchengou@gmail.com
 // @Last modified by:   vxhly
-// @Last modified time: 2018-01-20 01:15:25 pm
+// @Last modified time: 2018-01-20 06:13:50 pm
 // @License: MIT
-@import "param";
-@import "base";
-@import "grid";
-@import "grid-name";
+@import "param"; // 全局变量
+@import "base"; // 清除浏览器默认样式
+@import "grid"; // 开启 Grid Layout 布局，区域将等分
+@import "grid-name"; // 开启命名区域布局
+@import "box-alignment"; // 网格项目的对齐方式
