@@ -1,0 +1,31 @@
+{
+  "name": "scss-grid",
+  "description": "Grid 网格布局神器，Grid Layout 是一种基于二维网格的布局系统，旨在完全改变我们设计基于网格的用户界面的方式，弥补网页开发在二维布局能力上的缺陷,可以通过 bower 和 npm 下载",
+  "main": "dist/scss-grid.css",
+  "version": "1.0.1",
+  "authors": [
+    "vxhly <pengchengou@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "scss-grid",
+    "grid-scss",
+    "grid",
+    "scss",
+    "sass",
+    "grid-sass",
+    "sass-grid",
+    "Grid",
+    "Layout",
+    "grid.css",
+    "Grid"
+  ],
+  "homepage": "https://github.com/vxhly/scss-grid#readme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

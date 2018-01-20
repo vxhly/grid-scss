@@ -1,0 +1,26 @@
+// @Author: vxhly
+// @Date:   2018-01-20 01:14:44 pm
+// @Email:  pengchengou@gmail.com
+// @Last modified by:   vxhly
+// @Last modified time: 2018-01-20 01:52:28 pm
+// @License: MIT
+
+[grid] {
+  display: grid;
+  width  : 100%;
+  height : 100%;
+}
+
+[grid^="row-"],
+[grid^="col-"] {
+  grid-gap: 1.5rem;
+}
+@for $i from 1 through 12 {
+  [grid~="row-#{$i}"] {
+    grid-template-rows: repeat($i, 1fr);
+  }
+
+  [grid~="col-#{$i}"] {
+    grid-template-columns: repeat($i, 1fr);
+  }
+}
