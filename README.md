@@ -1,6 +1,6 @@
-# scss-grid
+# grid-scss
 
-[![NPM version](https://img.shields.io/npm/v/scss-grid.svg?style=flat-square)](https://vxhly.github.io/2016/08/flexbox-layout/) [![GitHub forks](https://img.shields.io/github/forks/vxhly/scss-grid.svg)](https://github.com/vxhly/scss-grid/network) [![GitHub stars](https://img.shields.io/github/stars/vxhly/scss-grid.svg)](https://github.com/vxhly/scss-grid/stargazers) [![NPM download](https://img.shields.io/npm/dm/scss-grid.svg?style=flat-square)](https://npmjs.org/package/scss-grid) [![GitHub license](https://img.shields.io/github/license/vxhly/scss-grid.svg)](https://github.com/vxhly/scss-grid/blob/master/LICENSE)
+[![NPM version](https://img.shields.io/npm/v/grid-scss.svg?style=flat-square)](https://vxhly.github.io/2016/08/flexbox-layout/) [![GitHub forks](https://img.shields.io/github/forks/vxhly/grid-scss.svg)](https://github.com/vxhly/grid-scss/network) [![GitHub stars](https://img.shields.io/github/stars/vxhly/grid-scss.svg)](https://github.com/vxhly/grid-scss/stargazers) [![NPM download](https://img.shields.io/npm/dm/grid-scss.svg?style=flat-square)](https://npmjs.org/package/grid-scss) [![GitHub license](https://img.shields.io/github/license/vxhly/grid-scss.svg)](https://github.com/vxhly/grid-scss/blob/master/LICENSE)
 
 > Grid Layout 是一种基于二维网格的布局系统，旨在完全改变我们设计基于网格的用户界面的方式，弥补网页开发在二维布局能力上的缺陷，可以通过 bower 和 npm 下载
 
@@ -13,29 +13,29 @@
 ## download
 
 ```bash
-git clone https://github.com/vxhly/scss-grid.git
+git clone https://github.com/vxhly/grid-scss.git
 ```
 
 ### npm
 
 ```bash
-npm install scss-grid --save
+npm install grid-scss --save
 ```
 
 ### bower
 
 ```bash
-bower install scss-grid --save
+bower install grid-scss --save
 ```
 
 ### use
 
 ```bash
-<link href="./scss-grid.min.css">
+<link href="./grid-scss.min.css">
 
 # or
 
-import 'scss-grid/src/scss-grid.scss'
+import 'grid-scss/src/grid-scss.scss'
 ```
 
 ## 为什么需要 Grid Layout
@@ -49,11 +49,11 @@ CSS Grid Layout擅长将页面划分为主要区域，或根据HTML基元构建�
 
 ## support
 
-2017年3月，Chrome、Firefox将开启默认支持。
+2017 年3 月，Chrome、Firefox将开启默认支持。
 
 当然对于很多人等不及浏览器默认支持，想提前体验一把，这里提供一些打开方式
 
-![support](https://github.com/vxhly/scss-grid/blob/master/img/caniuse.png)
+![support](https://github.com/vxhly/grid-scss/blob/master/img/caniuse.png)
 
 ### Chrome
 
@@ -93,13 +93,13 @@ CSS Grid Layout擅长将页面划分为主要区域，或根据HTML基元构建�
     |- _grid-name.scss  => 定义区域布局
     |- _grid.scss       => 开启 Grid Layout 布局，等分区域布局（通过 grid="col-* row-* 设置 * 取值为 number，范围 1~12"）
     |- _param.scss      => 全局变量（如需自定义，修改本文件即可）
-    |- scss-grid.scss   => 主文件
+    |- grid-scss.scss   => 主文件
 ```
 
 ## use
 
 ```html
-<link rel="stylesheet" href="./dist/css/scss-grid.css">
+<link rel="stylesheet" href="./dist/css/grid-scss.css">
 
 <!-- 经典布局（header aside main footer）,从左至右，从上至下 -->
 <div grid grid-name="header (aside main) footer" class="info">
