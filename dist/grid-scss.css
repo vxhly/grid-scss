@@ -1,7 +1,7 @@
 /*!
  * grid-scss - Grid 网格布局神器，Grid Layout 是一种基于二维网格的布局系统，旨在完全改变我们设计基于网格的用户界面的方式，弥补网页开发在二维布局能力上的缺陷,可以通过 bower 和 npm 下载
  * 
- * @version v1.0.4
+ * @version v1.0.6
  * 
  * @author vxhly <pengchengou@gmail.com>
  * 
@@ -46,11 +46,6 @@ body {
 [grid] img {
   -o-object-fit: cover;
   object-fit: cover;
-}
-
-[grid^='row-'],
-[grid^='col-'] {
-  grid-gap: 1.5rem;
 }
 
 [grid~='row-1'] {
@@ -159,10 +154,6 @@ body {
 
 [grid~='flow:row'] {
   grid-auto-flow: row;
-}
-
-[grid-name] {
-  grid-gap: 1.5rem 1.5rem;
 }
 
 [grid-name] > [grid-header] {
