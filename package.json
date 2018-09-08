@@ -1,6 +1,6 @@
 {
   "name": "grid-scss",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Grid 网格布局神器，Grid Layout 是一种基于二维网格的布局系统，旨在完全改变我们设计基于网格的用户界面的方式，弥补网页开发在二维布局能力上的缺陷,可以通过 bower 和 npm 下载",
   "main": "dist/grid-scss.css",
   "scripts": {
@@ -35,18 +35,18 @@
   },
   "homepage": "https://github.com/vxhly/grid-scss#readme",
   "devDependencies": {
-    "autoprefixer": "^7.2.6",
+    "autoprefixer": "^8.5.0",
     "cz-conventional-changelog": "^2.1.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-bump": "^3.1.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-bump": "^3.1.1",
     "gulp-cssbeautify": "^1.0.0",
     "gulp-csscomb": "^3.0.8",
-    "gulp-cssnano": "^2.1.2",
+    "gulp-cssnano": "^2.1.3",
     "gulp-header": "^2.0.5",
     "gulp-load-plugins": "^1.5.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
     "gulp-sequence": "^1.0.0",
     "gulp-sourcemaps": "^2.6.4",
     "publish": "^0.6.0"

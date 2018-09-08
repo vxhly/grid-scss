@@ -1,5 +1,25 @@
+<a name="1.0.9"></a>
+## [1.0.9](https://github.com/vxhly/grid-scss/compare/v1.0.8...v1.0.9) (2018-09-08)
+
+
+
+<a name="1.0.8"></a>
+## [1.0.8](https://github.com/vxhly/grid-scss/compare/v1.0.6...v1.0.8) (2018-03-21)
+
+
+### Bug Fixes
+
+* **_grid.scss:** delete [grid] {width:100%;height:100%} ([e4058e6](https://github.com/vxhly/grid-scss/commit/e4058e6))
+
+
+### BREAKING CHANGES
+
+* **_grid.scss:** delete style
+
+
+
 <a name="1.0.6"></a>
-## [1.0.6](https://github.com/vxhly/grid-scss/compare/1.0.4...1.0.6) (2018-03-17)
+## [1.0.6](https://github.com/vxhly/grid-scss/compare/1.0.4...v1.0.6) (2018-03-17)
 
 
 ### Bug Fixes
