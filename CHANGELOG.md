@@ -2,6 +2,11 @@
 ## [1.0.9](https://github.com/vxhly/grid-scss/compare/v1.0.8...v1.0.9) (2018-09-08)
 
 
+### Features
+
+* **新增 [grid-name]="[header main]":** 新增 [grid-name]="[header main]" 匹配,上下结构 ([7122c7c](https://github.com/vxhly/grid-scss/commit/7122c7c))
+
+
 
 <a name="1.0.8"></a>
 ## [1.0.8](https://github.com/vxhly/grid-scss/compare/v1.0.6...v1.0.8) (2018-03-21)
