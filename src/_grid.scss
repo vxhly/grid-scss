@@ -22,9 +22,6 @@
   }
 }
 
-[grid="col-auto"] {
-  grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
-}
 
 [grid~="flow:col"] {
   grid-auto-flow: column;
