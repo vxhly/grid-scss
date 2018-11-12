@@ -1,16 +1,16 @@
-// @Author: vxhly
-// @Date:   2018-01-20 06:08:28 pm
-// @Email:  pengchengou@gmail.com
-// @Last modified by:   vxhly
-// @Last modified time: 2018-01-20 09:22:42 pm
-// @License: MIT
-@each $param in auto, normal, start, end, center, stretch, baseline {
+@each $param in auto,
+normal,
+start,
+end,
+center,
+stretch,
+baseline {
   [grid] {
-    > [grid-box--col-#{param}] {
+    >[grid-box--col-#{param}] {
       align-self: #{param};
     }
 
-    > [grid-box--row-#{param}] {
+    >[grid-box--row-#{param}] {
       justify-self: #{param};
     }
   }
@@ -23,7 +23,16 @@
     justify-items: #{param};
   }
 }
-@each $param in normal, start, end, center, stretch, space-around, space-between, space-evenly, baseline {
+
+@each $param in normal,
+start,
+end,
+center,
+stretch,
+space-around,
+space-between,
+space-evenly,
+baseline {
   [grid~="col::#{param}"] {
     justify-content: #{param};
   }

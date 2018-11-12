@@ -1,27 +1,21 @@
-// @Author: vxhly
-// @Date:   2018-01-20 01:12:51 pm
-// @Email:  pengchengou@gmail.com
-// @Last modified by:   vxhly
-// @Last modified time: 2018-03-17 04:56:30 pm
-// @License: MIT
-
 [grid-name] {
-  > [grid-header] {
+  >[grid-header] {
     grid-area: header;
   }
 
-  > [grid-main] {
+  >[grid-main] {
     grid-area: main;
   }
 
-  > [grid-aside] {
+  >[grid-aside] {
     grid-area: aside;
   }
 
-  > [grid-footer] {
+  >[grid-footer] {
     grid-area: footer;
   }
 }
+
 /*
  * 写法应该遵循从上至下，从左至右原则，
  * 从上至下使用 [] 将区域名字括起来，区域名字使用空格相隔
@@ -36,8 +30,8 @@
    *   | main   |
    *   ----------
    */
-  grid-template-areas: "header" "main";
-  grid-template-rows : $header auto;
+  grid-template-areas: "header""main";
+  grid-template-rows: $header auto;
 }
 
 [grid-name="[main footer]"] {
@@ -48,8 +42,8 @@
    *   | footer   |
 *   ------------
    */
-  grid-template-areas: "main" "footer";
-  grid-template-rows : auto $footer;
+  grid-template-areas: "main""footer";
+  grid-template-rows: auto $footer;
 }
 
 [grid-name="[header main footer]"] {
@@ -62,8 +56,8 @@
    *   | footer |
    *   ----------
    */
-  grid-template-areas: "header" "main" "footer";
-  grid-template-rows : $header auto $footer;
+  grid-template-areas: "header""main""footer";
+  grid-template-rows: $header auto $footer;
 }
 
 [grid-name="(aside main)"] {
@@ -72,7 +66,7 @@
    *   | aside | main |
    *   ----------------
    */
-  grid-template-areas  : "aside main" "aside main";
+  grid-template-areas: "aside main""aside main";
   grid-template-columns: $aside auto;
 }
 
@@ -84,8 +78,8 @@
    *   | aside | main |
    *   ----------------
    */
-  grid-template-areas  : "header header" "aside main";
-  grid-template-rows   : $header auto;
+  grid-template-areas: "header header""aside main";
+  grid-template-rows: $header auto;
   grid-template-columns: $aside auto;
 }
 
@@ -99,8 +93,8 @@
    *   |       | footer |
    *   ------------------
    */
-  grid-template-areas  : "header header" "aside main" "aside footer";
-  grid-template-rows   : $header auto $footer;
+  grid-template-areas: "header header""aside main""aside footer";
+  grid-template-rows: $header auto $footer;
   grid-template-columns: $aside auto;
 }
 
@@ -112,8 +106,8 @@
    *   |       | main   |
    *   ------------------
    */
-  grid-template-areas  : "aside header" "aside main";
-  grid-template-rows   : $header auto;
+  grid-template-areas: "aside header""aside main";
+  grid-template-rows: $header auto;
   grid-template-columns: $aside auto;
 }
 
@@ -127,8 +121,8 @@
    *   |       | footer |
    *   ------------------
    */
-  grid-template-areas  : "aside header" "aside main" "aside footer";
-  grid-template-rows   : $header auto $footer;
+  grid-template-areas: "aside header""aside main""aside footer";
+  grid-template-rows: $header auto $footer;
   grid-template-columns: $aside auto;
 }
 
@@ -142,8 +136,8 @@
    *   | footer       |
    *   ----------------
    */
-  grid-template-areas  : "header header" "aside main" "footer footer";
-  grid-template-rows   : $header auto $footer;
+  grid-template-areas: "header header""aside main""footer footer";
+  grid-template-rows: $header auto $footer;
   grid-template-columns: $aside auto;
 }
 
@@ -157,8 +151,8 @@
    *   | footer         |
    *   ------------------
    */
-  grid-template-areas  : "aside header" "aside main" "footer footer";
-  grid-template-rows   : $header auto $footer;
+  grid-template-areas: "aside header""aside main""footer footer";
+  grid-template-rows: $header auto $footer;
   grid-template-columns: $aside auto;
 }
 
@@ -170,7 +164,7 @@
    *   | footer       |
    *   ----------------
    */
-  grid-template-areas  : "aside main" "aside main" "footer footer";
-  grid-template-rows   : auto auto $footer;
+  grid-template-areas: "aside main""aside main""footer footer";
+  grid-template-rows: auto auto $footer;
   grid-template-columns: $aside auto;
 }
