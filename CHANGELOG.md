@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/vxhly/grid-scss/compare/v1.1.0...v1.1.1) (2018-11-14)
+
+
+### Bug Fixes
+
+* **修正清除样式:** 删除 margin:0;padding:0; 默认字体颜色为黑色 ([23dc899](https://github.com/vxhly/grid-scss/commit/23dc899))
+
+
+
 # [1.1.0](https://github.com/vxhly/grid-scss/compare/v1.0.10...v1.1.0) (2018-11-12)
 
 
