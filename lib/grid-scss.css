@@ -1,38 +1,27 @@
-/*!
- * grid-scss - Grid 网格布局神器，Grid Layout 是一种基于二维网格的布局系统，旨在完全改变我们设计基于网格的用户界面的方式，弥补网页开发在二维布局能力上的缺陷,可以通过 bower 和 npm 下载
- * 
- * @version v1.1.1
- * 
- * @author vxhly <pengchengou@gmail.com>
- * 
- * @link https://github.com/vxhly/grid-scss#readme
- * @license MIT
- */
-@charset 'UTF-8';
-
+@charset "UTF-8";
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  vertical-align: baseline;
-  outline: 0;
   -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
 }
 
 body {
-  font-family: -apple-system, Helvetica, 'Microsoft YaHei', Arial, sans-serif;
   font-size: 14px;
+  font-family: -apple-system, Helvetica, "Microsoft YaHei", Arial, sans-serif;
   line-height: 1.5;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   color: #000;
   background-color: #fff;
   -webkit-text-size-adjust: 100% !important;
-  -moz-text-size-adjust: 100% !important;
-  -ms-text-size-adjust: 100% !important;
-  text-size-adjust: 100% !important;
+     -moz-text-size-adjust: 100% !important;
+      -ms-text-size-adjust: 100% !important;
+          text-size-adjust: 100% !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 [grid] {
@@ -41,125 +30,122 @@ body {
 
 [grid] img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
-[grid~='row-1'] {
+[grid~=row-1] {
   grid-template-rows: repeat(1, 1fr);
 }
 
-[grid~='col-1'] {
+[grid~=col-1] {
   grid-template-columns: repeat(1, 1fr);
 }
 
-[grid~='row-2'] {
+[grid~=row-2] {
   grid-template-rows: repeat(2, 1fr);
 }
 
-[grid~='col-2'] {
+[grid~=col-2] {
   grid-template-columns: repeat(2, 1fr);
 }
 
-[grid~='row-3'] {
+[grid~=row-3] {
   grid-template-rows: repeat(3, 1fr);
 }
 
-[grid~='col-3'] {
+[grid~=col-3] {
   grid-template-columns: repeat(3, 1fr);
 }
 
-[grid~='row-4'] {
+[grid~=row-4] {
   grid-template-rows: repeat(4, 1fr);
 }
 
-[grid~='col-4'] {
+[grid~=col-4] {
   grid-template-columns: repeat(4, 1fr);
 }
 
-[grid~='row-5'] {
+[grid~=row-5] {
   grid-template-rows: repeat(5, 1fr);
 }
 
-[grid~='col-5'] {
+[grid~=col-5] {
   grid-template-columns: repeat(5, 1fr);
 }
 
-[grid~='row-6'] {
+[grid~=row-6] {
   grid-template-rows: repeat(6, 1fr);
 }
 
-[grid~='col-6'] {
+[grid~=col-6] {
   grid-template-columns: repeat(6, 1fr);
 }
 
-[grid~='row-7'] {
+[grid~=row-7] {
   grid-template-rows: repeat(7, 1fr);
 }
 
-[grid~='col-7'] {
+[grid~=col-7] {
   grid-template-columns: repeat(7, 1fr);
 }
 
-[grid~='row-8'] {
+[grid~=row-8] {
   grid-template-rows: repeat(8, 1fr);
 }
 
-[grid~='col-8'] {
+[grid~=col-8] {
   grid-template-columns: repeat(8, 1fr);
 }
 
-[grid~='row-9'] {
+[grid~=row-9] {
   grid-template-rows: repeat(9, 1fr);
 }
 
-[grid~='col-9'] {
+[grid~=col-9] {
   grid-template-columns: repeat(9, 1fr);
 }
 
-[grid~='row-10'] {
+[grid~=row-10] {
   grid-template-rows: repeat(10, 1fr);
 }
 
-[grid~='col-10'] {
+[grid~=col-10] {
   grid-template-columns: repeat(10, 1fr);
 }
 
-[grid~='row-11'] {
+[grid~=row-11] {
   grid-template-rows: repeat(11, 1fr);
 }
 
-[grid~='col-11'] {
+[grid~=col-11] {
   grid-template-columns: repeat(11, 1fr);
 }
 
-[grid~='row-12'] {
+[grid~=row-12] {
   grid-template-rows: repeat(12, 1fr);
 }
 
-[grid~='col-12'] {
+[grid~=col-12] {
   grid-template-columns: repeat(12, 1fr);
 }
 
-[grid~='flow:col'] {
+[grid~="flow:col"] {
   grid-auto-flow: column;
 }
 
-[grid~='flow:row'] {
+[grid~="flow:row"] {
   grid-auto-flow: row;
 }
 
 [grid-name] > [grid-header] {
   grid-area: header;
 }
-
 [grid-name] > [grid-main] {
   grid-area: main;
 }
-
 [grid-name] > [grid-aside] {
   grid-area: aside;
 }
-
 [grid-name] > [grid-footer] {
   grid-area: footer;
 }
@@ -169,32 +155,32 @@ body {
  * 从上至下使用 [] 将区域名字括起来，区域名字使用空格相隔
  * 从左至右使用 () 将区域名字括起来，区域名字使用空格相隔
  */
-[grid-name='[header main]'] {
-    /**
+[grid-name="[header main]"] {
+  /**
    *   ----------
    *   | header |
    *   ----------
    *   | main   |
    *   ----------
    */
-  grid-template-areas: 'header' 'main';
+  grid-template-areas: "header" "main";
   grid-template-rows: 60px auto;
 }
 
-[grid-name='[main footer]'] {
-    /**
-   *   ------------
-   *   | main     |
-   *   ------------
-   *   | footer   |
-*   ------------
-   */
-  grid-template-areas: 'main' 'footer';
+[grid-name="[main footer]"] {
+  /**
+     *   ------------
+     *   | main     |
+     *   ------------
+     *   | footer   |
+  *   ------------
+     */
+  grid-template-areas: "main" "footer";
   grid-template-rows: auto 60px;
 }
 
-[grid-name='[header main footer]'] {
-    /**
+[grid-name="[header main footer]"] {
+  /**
    *   ----------
    *   | header |
    *   ----------
@@ -203,35 +189,35 @@ body {
    *   | footer |
    *   ----------
    */
-  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-areas: "header" "main" "footer";
   grid-template-rows: 60px auto 60px;
 }
 
-[grid-name='(aside main)'] {
-    /**
+[grid-name="(aside main)"] {
+  /**
    *   ----------------
    *   | aside | main |
    *   ----------------
    */
-  grid-template-areas: 'aside main' 'aside main';
+  grid-template-areas: "aside main" "aside main";
   grid-template-columns: 150px auto;
 }
 
-[grid-name='[header (aside main)]'] {
-    /**
+[grid-name="[header (aside main)]"] {
+  /**
    *   ----------------
    *   | header       |
    *   ----------------
    *   | aside | main |
    *   ----------------
    */
-  grid-template-areas: 'header header' 'aside main';
+  grid-template-areas: "header header" "aside main";
   grid-template-rows: 60px auto;
   grid-template-columns: 150px auto;
 }
 
-[grid-name='[header (aside [main footer])]'] {
-    /**
+[grid-name="[header (aside [main footer])]"] {
+  /**
    *   ------------------
    *   | header         |
    *   ------------------
@@ -240,26 +226,26 @@ body {
    *   |       | footer |
    *   ------------------
    */
-  grid-template-areas: 'header header' 'aside main' 'aside footer';
+  grid-template-areas: "header header" "aside main" "aside footer";
   grid-template-rows: 60px auto 60px;
   grid-template-columns: 150px auto;
 }
 
-[grid-name='(aside [header main])'] {
-    /**
+[grid-name="(aside [header main])"] {
+  /**
    *   ------------------
    *   |       | header |
    *   | aside |--------|
    *   |       | main   |
    *   ------------------
    */
-  grid-template-areas: 'aside header' 'aside main';
+  grid-template-areas: "aside header" "aside main";
   grid-template-rows: 60px auto;
   grid-template-columns: 150px auto;
 }
 
-[grid-name='(aside [header main footer])'] {
-    /**
+[grid-name="(aside [header main footer])"] {
+  /**
    *   ------------------
    *   |       | header |
    *   |       |--------|
@@ -268,13 +254,13 @@ body {
    *   |       | footer |
    *   ------------------
    */
-  grid-template-areas: 'aside header' 'aside main' 'aside footer';
+  grid-template-areas: "aside header" "aside main" "aside footer";
   grid-template-rows: 60px auto 60px;
   grid-template-columns: 150px auto;
 }
 
-[grid-name='[header (aside main) footer]'] {
-    /**
+[grid-name="[header (aside main) footer]"] {
+  /**
    *   ----------------
    *   | header       |
    *   |--------------|
@@ -283,13 +269,13 @@ body {
    *   | footer       |
    *   ----------------
    */
-  grid-template-areas: 'header header' 'aside main' 'footer footer';
+  grid-template-areas: "header header" "aside main" "footer footer";
   grid-template-rows: 60px auto 60px;
   grid-template-columns: 150px auto;
 }
 
-[grid-name='[(aside [header main]) footer]'] {
-    /**
+[grid-name="[(aside [header main]) footer]"] {
+  /**
    *   ------------------
    *   |       | header |
    *   | asdie |--------|
@@ -298,286 +284,277 @@ body {
    *   | footer         |
    *   ------------------
    */
-  grid-template-areas: 'aside header' 'aside main' 'footer footer';
+  grid-template-areas: "aside header" "aside main" "footer footer";
   grid-template-rows: 60px auto 60px;
   grid-template-columns: 150px auto;
 }
 
-[grid-name='[(asdie main) footer]'] {
-    /*
+[grid-name="[(asdie main) footer]"] {
+  /*
    *   ----------------
    *   | asdie | main |
    *   |--------------|
    *   | footer       |
    *   ----------------
    */
-  grid-template-areas: 'aside main' 'aside main' 'footer footer';
+  grid-template-areas: "aside main" "aside main" "footer footer";
   grid-template-rows: auto auto 60px;
   grid-template-columns: 150px auto;
 }
 
 [grid] > [grid-box--col-param] {
   -webkit-align-self: param;
-  -ms-flex-item-align: param;
-  align-self: param;
+      -ms-flex-item-align: param;
+          align-self: param;
 }
-
 [grid] > [grid-box--row-param] {
   justify-self: param;
 }
 
-[grid~='col--parma'] {
+[grid~=col--parma] {
   -webkit-box-align: param;
   -webkit-align-items: param;
-  -ms-flex-align: param;
-  align-items: param;
+      -ms-flex-align: param;
+          align-items: param;
 }
 
-[grid~='row--parma'] {
+[grid~=row--parma] {
   justify-items: param;
 }
 
 [grid] > [grid-box--col-param] {
   -webkit-align-self: param;
-  -ms-flex-item-align: param;
-  align-self: param;
+      -ms-flex-item-align: param;
+          align-self: param;
 }
-
 [grid] > [grid-box--row-param] {
   justify-self: param;
 }
 
-[grid~='col--parma'] {
+[grid~=col--parma] {
   -webkit-box-align: param;
   -webkit-align-items: param;
-  -ms-flex-align: param;
-  align-items: param;
+      -ms-flex-align: param;
+          align-items: param;
 }
 
-[grid~='row--parma'] {
+[grid~=row--parma] {
   justify-items: param;
 }
 
 [grid] > [grid-box--col-param] {
   -webkit-align-self: param;
-  -ms-flex-item-align: param;
-  align-self: param;
+      -ms-flex-item-align: param;
+          align-self: param;
 }
-
 [grid] > [grid-box--row-param] {
   justify-self: param;
 }
 
-[grid~='col--parma'] {
+[grid~=col--parma] {
   -webkit-box-align: param;
   -webkit-align-items: param;
-  -ms-flex-align: param;
-  align-items: param;
+      -ms-flex-align: param;
+          align-items: param;
 }
 
-[grid~='row--parma'] {
+[grid~=row--parma] {
   justify-items: param;
 }
 
 [grid] > [grid-box--col-param] {
   -webkit-align-self: param;
-  -ms-flex-item-align: param;
-  align-self: param;
+      -ms-flex-item-align: param;
+          align-self: param;
 }
-
 [grid] > [grid-box--row-param] {
   justify-self: param;
 }
 
-[grid~='col--parma'] {
+[grid~=col--parma] {
   -webkit-box-align: param;
   -webkit-align-items: param;
-  -ms-flex-align: param;
-  align-items: param;
+      -ms-flex-align: param;
+          align-items: param;
 }
 
-[grid~='row--parma'] {
+[grid~=row--parma] {
   justify-items: param;
 }
 
 [grid] > [grid-box--col-param] {
   -webkit-align-self: param;
-  -ms-flex-item-align: param;
-  align-self: param;
+      -ms-flex-item-align: param;
+          align-self: param;
 }
-
 [grid] > [grid-box--row-param] {
   justify-self: param;
 }
 
-[grid~='col--parma'] {
+[grid~=col--parma] {
   -webkit-box-align: param;
   -webkit-align-items: param;
-  -ms-flex-align: param;
-  align-items: param;
+      -ms-flex-align: param;
+          align-items: param;
 }
 
-[grid~='row--parma'] {
+[grid~=row--parma] {
   justify-items: param;
 }
 
 [grid] > [grid-box--col-param] {
   -webkit-align-self: param;
-  -ms-flex-item-align: param;
-  align-self: param;
+      -ms-flex-item-align: param;
+          align-self: param;
 }
-
 [grid] > [grid-box--row-param] {
   justify-self: param;
 }
 
-[grid~='col--parma'] {
+[grid~=col--parma] {
   -webkit-box-align: param;
   -webkit-align-items: param;
-  -ms-flex-align: param;
-  align-items: param;
+      -ms-flex-align: param;
+          align-items: param;
 }
 
-[grid~='row--parma'] {
+[grid~=row--parma] {
   justify-items: param;
 }
 
 [grid] > [grid-box--col-param] {
   -webkit-align-self: param;
-  -ms-flex-item-align: param;
-  align-self: param;
+      -ms-flex-item-align: param;
+          align-self: param;
 }
-
 [grid] > [grid-box--row-param] {
   justify-self: param;
 }
 
-[grid~='col--parma'] {
+[grid~=col--parma] {
   -webkit-box-align: param;
   -webkit-align-items: param;
-  -ms-flex-align: param;
-  align-items: param;
+      -ms-flex-align: param;
+          align-items: param;
 }
 
-[grid~='row--parma'] {
+[grid~=row--parma] {
   justify-items: param;
 }
 
-[grid~='col::param'] {
+[grid~="col::param"] {
   -webkit-box-pack: param;
   -webkit-justify-content: param;
-  -ms-flex-pack: param;
-  justify-content: param;
+      -ms-flex-pack: param;
+          justify-content: param;
 }
 
-[grid~='row::param'] {
+[grid~="row::param"] {
   -webkit-align-content: param;
-  -ms-flex-line-pack: param;
-  align-content: param;
+      -ms-flex-line-pack: param;
+          align-content: param;
 }
 
-[grid~='col::param'] {
+[grid~="col::param"] {
   -webkit-box-pack: param;
   -webkit-justify-content: param;
-  -ms-flex-pack: param;
-  justify-content: param;
+      -ms-flex-pack: param;
+          justify-content: param;
 }
 
-[grid~='row::param'] {
+[grid~="row::param"] {
   -webkit-align-content: param;
-  -ms-flex-line-pack: param;
-  align-content: param;
+      -ms-flex-line-pack: param;
+          align-content: param;
 }
 
-[grid~='col::param'] {
+[grid~="col::param"] {
   -webkit-box-pack: param;
   -webkit-justify-content: param;
-  -ms-flex-pack: param;
-  justify-content: param;
+      -ms-flex-pack: param;
+          justify-content: param;
 }
 
-[grid~='row::param'] {
+[grid~="row::param"] {
   -webkit-align-content: param;
-  -ms-flex-line-pack: param;
-  align-content: param;
+      -ms-flex-line-pack: param;
+          align-content: param;
 }
 
-[grid~='col::param'] {
+[grid~="col::param"] {
   -webkit-box-pack: param;
   -webkit-justify-content: param;
-  -ms-flex-pack: param;
-  justify-content: param;
+      -ms-flex-pack: param;
+          justify-content: param;
 }
 
-[grid~='row::param'] {
+[grid~="row::param"] {
   -webkit-align-content: param;
-  -ms-flex-line-pack: param;
-  align-content: param;
+      -ms-flex-line-pack: param;
+          align-content: param;
 }
 
-[grid~='col::param'] {
+[grid~="col::param"] {
   -webkit-box-pack: param;
   -webkit-justify-content: param;
-  -ms-flex-pack: param;
-  justify-content: param;
+      -ms-flex-pack: param;
+          justify-content: param;
 }
 
-[grid~='row::param'] {
+[grid~="row::param"] {
   -webkit-align-content: param;
-  -ms-flex-line-pack: param;
-  align-content: param;
+      -ms-flex-line-pack: param;
+          align-content: param;
 }
 
-[grid~='col::param'] {
+[grid~="col::param"] {
   -webkit-box-pack: param;
   -webkit-justify-content: param;
-  -ms-flex-pack: param;
-  justify-content: param;
+      -ms-flex-pack: param;
+          justify-content: param;
 }
 
-[grid~='row::param'] {
+[grid~="row::param"] {
   -webkit-align-content: param;
-  -ms-flex-line-pack: param;
-  align-content: param;
+      -ms-flex-line-pack: param;
+          align-content: param;
 }
 
-[grid~='col::param'] {
+[grid~="col::param"] {
   -webkit-box-pack: param;
   -webkit-justify-content: param;
-  -ms-flex-pack: param;
-  justify-content: param;
+      -ms-flex-pack: param;
+          justify-content: param;
 }
 
-[grid~='row::param'] {
+[grid~="row::param"] {
   -webkit-align-content: param;
-  -ms-flex-line-pack: param;
-  align-content: param;
+      -ms-flex-line-pack: param;
+          align-content: param;
 }
 
-[grid~='col::param'] {
+[grid~="col::param"] {
   -webkit-box-pack: param;
   -webkit-justify-content: param;
-  -ms-flex-pack: param;
-  justify-content: param;
+      -ms-flex-pack: param;
+          justify-content: param;
 }
 
-[grid~='row::param'] {
+[grid~="row::param"] {
   -webkit-align-content: param;
-  -ms-flex-line-pack: param;
-  align-content: param;
+      -ms-flex-line-pack: param;
+          align-content: param;
 }
 
-[grid~='col::param'] {
+[grid~="col::param"] {
   -webkit-box-pack: param;
   -webkit-justify-content: param;
-  -ms-flex-pack: param;
-  justify-content: param;
+      -ms-flex-pack: param;
+          justify-content: param;
 }
 
-[grid~='row::param'] {
+[grid~="row::param"] {
   -webkit-align-content: param;
-  -ms-flex-line-pack: param;
-  align-content: param;
+      -ms-flex-line-pack: param;
+          align-content: param;
 }
-
-/*# sourceMappingURL=grid-scss.css.map */

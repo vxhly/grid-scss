@@ -2,9 +2,9 @@
   "name": "grid-scss",
   "version": "1.1.1",
   "description": "Grid 网格布局神器，Grid Layout 是一种基于二维网格的布局系统，旨在完全改变我们设计基于网格的用户界面的方式，弥补网页开发在二维布局能力上的缺陷,可以通过 bower 和 npm 下载",
-  "main": "lib/grid-scss.css",
+  "main": "src/grid-scss.scss",
   "scripts": {
-    "build": "rollup -c",
+    "build": "webpack --mode production && gulp build",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "test": "npm run build"
   },
@@ -32,12 +32,7 @@
   },
   "homepage": "https://github.com/vxhly/grid-scss#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.8",
-    "postcss": "^8.4.16",
-    "rollup": "^2.78.1",
-    "rollup-plugin-scss": "^3.0.0",
-    "sass": "^1.54.5",
-    "cz-conventional-changelog": "^2.1.0"
+    
   },
   "config": {
     "commitizen": {
